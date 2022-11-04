@@ -1,0 +1,102 @@
+#wrapper {
+    width: 700px;
+    margin: 200px auto;
+}
+
+#songlist {
+    display: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    height: 150px;
+    background-color: lightgray
+}
+
+audio {
+    display: none;
+}
+
+#mid {
+    width: 600px;
+    height: 600px;
+    background-image: url("./img/mid.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border: solid 5px;
+    border-radius: 30px;
+}
+
+#btn_top {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    display: flex;
+
+
+}
+
+.btn_top {
+    width: 80px;
+    height: 80px;
+}
+
+#vol {
+    width: 50px;
+    margin-right: 40px;
+}
+
+#volBar {
+    visibility: hidden;
+}
+
+#listadd {
+    display: flex;
+    flex-direction: column;
+}
+
+#add {
+    visibility: hidden;
+}
+
+#addfile {
+    border: solid;
+    box-sizing: content-box;
+    display: none;
+}
+
+#btn_top2 {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+#musicTitle {
+    margin: 0 auto;
+    width: 600px;
+    height: 60px;
+    background-color: gray;
+    border: solid 1px;
+    opacity: .5;
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 90px;
+}
+
+#btn_bottom {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    right: 0px;
+}
+
+button {
+    border-radius: 25px;
+    opacity: .4;
+    border: solid 4px black;
+}

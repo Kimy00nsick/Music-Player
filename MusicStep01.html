@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="MusicStep01.css">
+    <script src="MusicStep01.js"></script>
+</head>
+
+<body onload="mInit()">
+    <div id="wrapper">
+        <div id="mid">
+            <div id="btn_top">
+                <div id="vol"><button class="btn_top" name="btn" onmouseover="onMouse(0)" onmouseout="outMouse(0)"
+                        onclick="musicSound()"><img src="./img/btn_top1.png" alt=""></button><input type="range"
+                        id="volBar" min="0" max="10" onchange="musicVol()"></div>
+                <div id="listadd"><button class="btn_top" name="btn" onmouseover="onMouse(1)"
+                        onmouseout="outMouse(1)"><img src="./img/btn_top2.png" onclick="musicList()"></button><button
+                        id="add" onclick="addSong()"><img src="./img/addsong.png"></button></div>
+                <div><select id="songlist" size="10" onchange="select()"></select><input type="file" id="addfile"
+                        onchange="addFile()"></div>
+            </div>
+            <div id="btn_top2"><button name="btn" onmouseover="onMouse(2)" onmouseout="outMouse(2)"
+                    onclick="mLoop()"><img src="./img/loop.png" id="loopimg"></button></div>
+            <div id="musicTitle"></div>
+            <div id="btn_bottom"><button class="btn_bottom" name="btn" onmouseover="onMouse(3)" onmouseout="outMouse(3)"
+                    onclick="mFirst()"><img src="./img/btn1.png" alt=""></button><button class="btn_bottom" name="btn"
+                    onmouseover="onMouse(4)" onmouseout="outMouse(4)" onclick="mPrevious()"><img src="./img/btn2.png"
+                        alt=""></button><button class="btn_bottom" onclick="mPlayPause()" name="btn"
+                    onmouseover="onMouse(5)" onmouseout="outMouse(5)"><img src="./img/btn3_1.png"
+                        id="btn_play"></button><button class="btn_bottom" name="btn" onmouseover="onMouse(6)"
+                    onmouseout="outMouse(6)" onclick="mNext()"><img src="./img/btn4.png" alt="">
+                </button><button class="btn_bottom" name="btn" onmouseover="onMouse(7)" onmouseout="outMouse(7)"
+                    onclick="mLast()"><img src="./img/btn5.png" alt="">
+                    </span></button><button class="btn_bottom" name="btn" onmouseover="onMouse(8)"
+                    onmouseout="outMouse(8)" onclick="mStop()"><img src="./img/btn6.png" alt=""></button>
+            </div>
+        </div>
+
+
+        <div><audio controls id="Music">
+                <source src="" type=""></audio></div>
+        <div type="text" id="Music_name"></div>
+
+    </div>
+</body>
+
+</html>
